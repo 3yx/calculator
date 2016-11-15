@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+<div class="calculator #efebe9 brown lighten-5">
+		<div class="form">
+				<div class="row">
+						<input class=" display_result" id="display" type="text" disabled />
+						<input class=" display" id="display" type="text" disabled />
+				</div>
+				<div class="row">
+						<button type="button" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn music">&#9835;</button>
+						<button type="button" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key sqrt">&#8730;</button>
+						<button type="button" value="^2" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key power2">x<sup>2</sup></button>
+						<button type="button" value="^3" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key power3">x<sup>3</sup></button>						
+				</div>
+				<div class="row">
+						<button type="button" value="c" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key clear">c</button>
+						<button type="button" value="<--" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key backspace "><</button>
+						<button type="button" value="%" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn button percent">%</button>
+						<button type="button" value="/" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button operand">/</button>						
+				</div>
+				<div class="row">
+						<button type="button" value="7" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button">7</button>
+						<button type="button" value="8" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button">8</button>
+						<button type="button" value="9" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button">9</button>
+						
+						<button type="button" value="*" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button operand">*</button>
+				</div>
+				<div class="row">
+						<button type="button" value="4" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button">4</button>
+						<button type="button" value="5" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button">5</button>
+						<button type="button" value="6" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button">6</button>
+						
+						<button type="button" value="-" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn button operand">-</button>
+				</div>
+				<div class="row">
+						<button type="button" value="1" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button">1</button>
+						<button type="button" value="2" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button">2</button>
+						<button type="button" value="3" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button">3</button>			
+						<button type="button" value="+" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button operand">+</button>
+				</div>
+				<div class="row">
+						<button type="button" value="0" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button zero">0</button>
+						<button type="button" value="." class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key button">.</button>
+						
+						
+						<button type="button" value="=" class="waves-effect waves-light#bcaaa4 brown lighten-3 btn key key--equal">=</button>
+				</div>
+
+				<audio id="kiss" controls>
+				  <source src="http://online-kissfm.tavrmedia.ua/KissFM" type="audio/mpeg">
+				</audio>
+		</div>
+</div>
+<div class="close">
+	<img src="img/close.png" alt="" width="15px" title="Don't look at me">
+</div>
+<div id="loc1" class="locate">
+	<img class="larger" src="img/1.jpg" alt="" width="200px">
+</div>
+<div id="loc2" class="locate hidden-xs hidden-sm">
+	<img class="larger" src="img/1.jpg"  alt="" width="200px">
+</div>
+
+</body>
+
+</html>
